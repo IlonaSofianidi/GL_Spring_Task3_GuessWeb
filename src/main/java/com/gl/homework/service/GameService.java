@@ -1,14 +1,13 @@
 package com.gl.homework.service;
 
 import com.gl.homework.wire.GuessNumberResponse;
+import com.gl.homework.wire.UserIdResponse;
 
 public interface GameService {
-    void reset();
 
-    void setGuess(int guess);
-
-    boolean isGameWon();
+    UserIdResponse saveUserGuess(int guess);
 
     GuessNumberResponse getGameStatus(int guess);
+
 
 }
